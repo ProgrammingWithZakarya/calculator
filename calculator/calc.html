@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>calc</title>
+  <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="display">
+      <span class="span1">0</span>
+      <span class="result">result</span>
+    </div>
+    <div class="calc">
+      <div class="numbers">
+        <div class="btn oper" onclick="resetValue()" style="color: orangered;">DEL</div>
+        <div class="btn oper" onclick="delC()" style="color:rgb(2, 175, 109)">C</div>
+        <div class="btn oper">&#37;</div>
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn">00</div>
+        <div class="btn">0</div>
+        <div class="btn oper">.</div>
+      </div>
+      <div class="accounting">
+        <div class="acc">/</div>
+        <div class="acc">*</div>
+        <div class="acc">-</div>
+        <div class="acc">+</div>
+      </div>
+      <div class="equal" onclick="final()">&#9868</div>
+    </div>
+    <div class="info">
+      <span>&#8505;nformation</span>
+      <div class="info-wrapper">
+        <header class="info-header">
+          <h5>Information</h5>
+          <button class="hide-info">Hidden</button>
+        </header>
+        <hr>
+        <main class="info-main">
+          <ul>Shortcuts
+            <li>Clear Result => <code class="key-name">Delete</code></li>
+            <li>Clear Input => <code class="key-name">Backspace</code></li>
+            <li>Equal => <code class="key-name">Enter </code></li>
+            <li>Numbers => <code class="key-name">Number Keys</code></li>
+          </ul>
+        </main>
+        <br>
+        <hr>
+        <footer class="info-footer">Coding By
+          <span>
+            <a href="https://github.com/Zakaraymangur" target="_blank" class="my-name">ZakayaHasanZadeh</a>
+          </span>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script src="./src/script/script.js"></script>
+</body>
+
+</html>
